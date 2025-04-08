@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
 }
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -3258,7 +3292,10 @@ window.Quarto = {
 <h1 data-number="1"><span class="header-section-number">1</span> Preparation | 准备</h1>
 <ul>
 <li><p>Install R and RStudio IDE (<a href="https://bookdown.org/rdpeng/rprogdatascience/getting-started-with-r.html#installation">English Tutorial</a>). 安装 R and RStudio IDE (<a href="https://bookdown.org/wangminjie/R4DS/baseR-install.html">中文指南</a>).</p></li>
-<li><p>Install R packages: <strong>knitr</strong>, <strong>tinytex.</strong> 安装 R 语言包:</p></li>
+<li><p>Install R packages: <strong>knitr</strong>, <strong>tinytex.</strong> 安装 R 语言包:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">&#39;knitr&#39;</span>, <span class="st">&#39;tinytex&#39;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
 <li><p>Install <span class="math inline">\(\LaTeX\)</span> (preferably <span class="math inline">\(TINY\TeX\)</span>: <a href="https://yihui.org/tinytex/">English Tutorial</a>). 安装<span class="math inline">\(\LaTeX\)</span> (最好是 <span class="math inline">\(TINY\TeX\)</span>: <a href="https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/quarto.html#qmd-tinytex">中文指南简版</a>,<a href="https://yihui.org/tinytex/cn/">官方中文指南</a>).</p></li>
 <li><p>Install <a href="https://zotero.org/">Zotero</a>. 安装 <a href="https://zotero.org/">Zotero</a>.</p></li>
 <li><p>Install <a href="https://git-scm.com/">Git</a>. 安装 <a href="https://git-scm.com/">Git</a>.</p></li>
