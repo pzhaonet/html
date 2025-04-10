@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr. Peng Zhao | 赵鹏">
-<meta name="dcterms.date" content="2025-04-08">
+<meta name="dcterms.date" content="2025-04-10">
 
 <title>ZPThesis: A Quarto Template for Writing</title>
 <style>
@@ -3232,23 +3232,17 @@ window.Quarto = {
   <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto"><span class="header-section-number">2.2</span> Quarto</a></li>
   <li><a href="#why-quarto-为何使用-quarto" id="toc-why-quarto-为何使用-quarto" class="nav-link" data-scroll-target="#why-quarto-为何使用-quarto"><span class="header-section-number">2.3</span> Why Quarto | 为何使用 Quarto</a></li>
   </ul></li>
-  <li><a href="#getting-started-入门" id="toc-getting-started-入门" class="nav-link" data-scroll-target="#getting-started-入门"><span class="header-section-number">3</span> Getting Started | 入门</a>
-  <ul class="collapse">
-  <li><a href="#create-a-simple-quarto-document-创建简单文档" id="toc-create-a-simple-quarto-document-创建简单文档" class="nav-link" data-scroll-target="#create-a-simple-quarto-document-创建简单文档"><span class="header-section-number">3.1</span> Create a simple Quarto Document | 创建简单文档</a></li>
-  <li><a href="#export-导出" id="toc-export-导出" class="nav-link" data-scroll-target="#export-导出"><span class="header-section-number">3.2</span> Export | 导出</a></li>
-  <li><a href="#exercises-练习" id="toc-exercises-练习" class="nav-link" data-scroll-target="#exercises-练习"><span class="header-section-number">3.3</span> Exercises | 练习</a></li>
-  </ul></li>
+  <li><a href="#getting-started-入门" id="toc-getting-started-入门" class="nav-link" data-scroll-target="#getting-started-入门"><span class="header-section-number">3</span> Getting Started | 入门</a></li>
   <li><a href="#zpthesis" id="toc-zpthesis" class="nav-link" data-scroll-target="#zpthesis"><span class="header-section-number">4</span> ZPThesis</a>
   <ul class="collapse">
   <li><a href="#start-from-zpthesis-clean-开始" id="toc-start-from-zpthesis-clean-开始" class="nav-link" data-scroll-target="#start-from-zpthesis-clean-开始"><span class="header-section-number">4.1</span> Start from ZPThesis-clean | 开始</a></li>
   <li><a href="#customize-work-report-自定义工作报告" id="toc-customize-work-report-自定义工作报告" class="nav-link" data-scroll-target="#customize-work-report-自定义工作报告"><span class="header-section-number">4.2</span> Customize: Work Report | 自定义：工作报告</a></li>
   <li><a href="#further-customize-common-report-and-paper-深度自定义一般报告和论文" id="toc-further-customize-common-report-and-paper-深度自定义一般报告和论文" class="nav-link" data-scroll-target="#further-customize-common-report-and-paper-深度自定义一般报告和论文"><span class="header-section-number">4.3</span> Further Customize: Common Report and Paper | 深度自定义：一般报告和论文</a></li>
   </ul></li>
-  <li><a href="#version-control-版本控制" id="toc-version-control-版本控制" class="nav-link" data-scroll-target="#version-control-版本控制"><span class="header-section-number">5</span> Version control | 版本控制</a>
+  <li><a href="#advanced-features" id="toc-advanced-features" class="nav-link" data-scroll-target="#advanced-features"><span class="header-section-number">5</span> Advanced Features</a>
   <ul class="collapse">
-  <li><a href="#enable-git-开启-git" id="toc-enable-git-开启-git" class="nav-link" data-scroll-target="#enable-git-开启-git"><span class="header-section-number">5.1</span> Enable Git | 开启 Git</a></li>
-  <li><a href="#save-your-game-存档" id="toc-save-your-game-存档" class="nav-link" data-scroll-target="#save-your-game-存档"><span class="header-section-number">5.2</span> Save Your Game | 存档</a></li>
-  <li><a href="#customize-your-git-自定义" id="toc-customize-your-git-自定义" class="nav-link" data-scroll-target="#customize-your-git-自定义"><span class="header-section-number">5.3</span> Customize Your Git | 自定义</a></li>
+  <li><a href="#interactive-graphstables-in-html" id="toc-interactive-graphstables-in-html" class="nav-link" data-scroll-target="#interactive-graphstables-in-html"><span class="header-section-number">5.1</span> Interactive graphs/tables (in html)</a></li>
+  <li><a href="#version-control-版本控制" id="toc-version-control-版本控制" class="nav-link" data-scroll-target="#version-control-版本控制"><span class="header-section-number">5.2</span> Version control | 版本控制</a></li>
   </ul></li>
   <li><a href="#further-readings-阅读材料" id="toc-further-readings-阅读材料" class="nav-link" data-scroll-target="#further-readings-阅读材料"><span class="header-section-number">6</span> Further Readings | 阅读材料</a></li>
   </ul>
@@ -3276,7 +3270,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 8, 2025</p>
+      <p class="date">April 10, 2025</p>
     </div>
   </div>
   
@@ -3327,27 +3321,17 @@ window.Quarto = {
 </section>
 <section id="getting-started-入门" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Getting Started | 入门</h1>
-<section id="create-a-simple-quarto-document-创建简单文档" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="create-a-simple-quarto-document-创建简单文档"><span class="header-section-number">3.1</span> Create a simple Quarto Document | 创建简单文档</h2>
 <ul>
-<li>RStudio -&gt; <em>File</em> -&gt; <em>New File</em> -&gt; <em>Quarto Document</em> -&gt; <em>Create</em></li>
+<li><p>Create a simple Quarto Document | 创建简单文档: RStudio -&gt; <em>File</em> -&gt; <em>New File</em> -&gt; <em>Quarto Document</em> -&gt; <em>Create</em></p></li>
+<li><p>Export | 导出: Render (<code>ctrl + shift + k</code>)</p></li>
 </ul>
-</section>
-<section id="export-导出" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="export-导出"><span class="header-section-number">3.2</span> Export | 导出</h2>
-<ul>
-<li>Render (<code>ctrl + shift + k</code>)</li>
-</ul>
-</section>
-<section id="exercises-练习" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="exercises-练习"><span class="header-section-number">3.3</span> Exercises | 练习</h2>
+<p>Exercises | 练习</p>
 <ol type="1">
 <li>Generate a Quarto document for taking notes. 创建一个 Quarto 文档来记录本课的笔记。</li>
 <li>Render your document into a .html document. 把上述文档导出为 html 格式。</li>
 <li>Render your document into a .docx document. 把上述文档导出为 docx 格式。</li>
 <li>Render your document into a .pdf document. 把上述文档导出为 pdf 格式。</li>
 </ol>
-</section>
 </section>
 <section id="zpthesis" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> ZPThesis</h1>
@@ -3378,25 +3362,55 @@ window.Quarto = {
 <p>Exercise: Generate your own paper. 练习：创建你的论文草稿。</p>
 </section>
 </section>
-<section id="version-control-版本控制" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Version control | 版本控制</h1>
-<section id="enable-git-开启-git" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="enable-git-开启-git"><span class="header-section-number">5.1</span> Enable Git | 开启 Git</h2>
+<section id="advanced-features" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Advanced Features</h1>
+<section id="interactive-graphstables-in-html" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="interactive-graphstables-in-html"><span class="header-section-number">5.1</span> Interactive graphs/tables (in html)</h2>
 <ul>
-<li>RStudio -&gt; <em>Tools</em> -&gt; <em>Global Options</em> -&gt; <em>Git/SVN</em> -&gt; <em>Git Executable</em></li>
-<li>RStudio -&gt; <em>Tools</em> -&gt; <em>Project Options</em> -&gt; <em>Git/SVN</em> -&gt; <em>Version control system: Git</em></li>
+<li><strong>ggplot2</strong> + <strong>plotly</strong> for common graphs</li>
 </ul>
-</section>
-<section id="save-your-game-存档" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="save-your-game-存档"><span class="header-section-number">5.2</span> Save Your Game | 存档</h2>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(iris)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>g1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(iris) <span class="sc">+</span> </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(Sepal.Length, Sepal.Width, <span class="at">color =</span> Species))</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(g1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <ul>
-<li>Commit</li>
+<li><strong>leaflet</strong> for maps</li>
 </ul>
-</section>
-<section id="customize-your-git-自定义" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="customize-your-git-自定义"><span class="header-section-number">5.3</span> Customize Your Git | 自定义</h2>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>leaflet<span class="sc">::</span><span class="fu">leaflet</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  leaflet<span class="sc">::</span><span class="fu">addAwesomeMarkers</span>(<span class="fl">120.7385</span>, <span class="fl">31.273</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  leaflet<span class="sc">::</span><span class="fu">setView</span>(long, lat, <span class="at">zoom =</span> <span class="dv">16</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  leafletCN<span class="sc">::</span><span class="fu">amap</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <ul>
-<li><em>.gitignore</em></li>
+<li><strong>DT</strong> for long tables</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>showdtf <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">default_length =</span> <span class="dv">6</span>){</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  DT<span class="sc">::</span><span class="fu">datatable</span>(x, <span class="at">escape =</span> <span class="cn">FALSE</span>, <span class="at">filter =</span> <span class="st">&quot;top&quot;</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">options =</span> <span class="fu">list</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">search =</span> <span class="fu">list</span>(<span class="at">regex =</span> <span class="cn">TRUE</span>, <span class="at">caseInsensitive =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                  <span class="at">lengthMenu =</span> <span class="fu">list</span>(<span class="fu">c</span>(default_length, <span class="dv">20</span>, <span class="fu">nrow</span>(x)), </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                                    <span class="fu">c</span>(default_length, <span class="dv">20</span>, <span class="fu">nrow</span>(x))),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                  <span class="at">pageLength =</span> default_length))</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">showdtf</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="version-control-版本控制" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="version-control-版本控制"><span class="header-section-number">5.2</span> Version control | 版本控制</h2>
+<ul>
+<li><p>Enable Git | 开启 Git</p>
+<ul>
+<li><p>RStudio -&gt; <em>Tools</em> -&gt; <em>Global Options</em> -&gt; <em>Git/SVN</em> -&gt; <em>Git Executable</em></p></li>
+<li><p>RStudio -&gt; <em>Tools</em> -&gt; <em>Project Options</em> -&gt; <em>Git/SVN</em> -&gt; <em>Version control system: Git</em></p></li>
+</ul></li>
+<li><p>Save Your Game | 存档: Commit</p></li>
+<li><p>Customize Your Git | 自定义: <em>.gitignore</em></p></li>
 </ul>
 </section>
 </section>
@@ -3405,6 +3419,7 @@ window.Quarto = {
 <ul>
 <li><a href="https://quarto.org/">Quarto website</a></li>
 <li>李东风: <a href="https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/quarto.html">《R语言教程：Quarto格式文件》</a></li>
+<li>Patrick Cameron: <a href="https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/">Some Quarto PDF formatting tips, with particular reference to thesis writing</a></li>
 </ul>
 </section>
 
